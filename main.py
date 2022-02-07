@@ -4,6 +4,14 @@ from discord.ext import commands, tasks
 import re
 import asyncio
 
+# Hide Token
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+token = os.environ.get("TOKEN")
+
 # Discord Default Value
 intents = discord.Intents.default()
 intents.members = True
@@ -90,4 +98,4 @@ async def on_message(message):
 async def 테스트(ctx):
     await ctx.send("켜져있어.")
 
-bot.run("OTM5ODU3NDAzODQxNzY5NTQz.Yf-8ag.CepSwh0prfbRdG6onHS0o4kBQfc")
+bot.run(token)

@@ -1,0 +1,14 @@
+# venv는 절대경로를 따라가기 때문에
+# 다른 환경에서는 같은 구성을 못 써
+venv/*
+
+# idea 메타데이터
+.idea/*
+
+# vscode 프로젝트 설정파일
+.vscode/*
+
+# 유틸리티용 배치파일
+/Deploy_To_Server.bat
+/Git_Pull.bat
+/token.env
