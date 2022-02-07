@@ -39,7 +39,7 @@ async def on_message(message):
             name = message.content.split(" ")[0]
             age = message.content.split(" ")[1]
             sex = message.content.split(" ")[2]
-            name = str(name)    # 맞는 형식인지 체크.
+            name = str(name)    # 맞는 형식인지 체크..
             try:
                 age = int(age)
             except:
