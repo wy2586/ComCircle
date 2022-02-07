@@ -6,11 +6,8 @@ import asyncio
 
 # Hide Token
 import os
-from dotenv import load_dotenv
 
-load_dotenv()
-
-token = os.environ.get("TOKEN")
+token = open("token", "r").readline()
 
 # Discord Default Value
 intents = discord.Intents.default()
